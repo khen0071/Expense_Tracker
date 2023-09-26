@@ -5,12 +5,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useGetExpenseQuery } from "../features/api/expense/expenseSlice";
 import FilterExpenseTable from "./FilterExpenseTable";
 import FilteredBar from "./chartComponents/FilteredBar";
-import Pagination from "./Pagination";
 
 const itemsPerPage = 4;
 
 const FilteredCalendar = () => {
-  const { data: expenseList, isLoading, refetch, error } = useGetExpenseQuery();
+  const { data: expenseList, isLoading, error } = useGetExpenseQuery();
   const [selectedDate, setSelectedDate] = useState(null);
 
   const [currentPage, setCurrentPage] = useState(1);

@@ -11,7 +11,6 @@ import Stats from "./Stats";
 import DateTotalMonth from "./chartComponents/DateTotalMonth";
 import Navbar from "./Navbar";
 import FilteredCalendar from "./FilteredCalendar";
-
 import "react-datepicker/dist/react-datepicker.css";
 
 const itemsPerPage = 4;
