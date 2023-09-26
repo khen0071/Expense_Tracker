@@ -1,0 +1,247 @@
+{
+  "expenses": [
+    {
+      "title": "books",
+      "price": 20,
+      "paidWith": "cash",
+      "paymentDetail": "",
+      "category": "personal",
+      "date": "Wed Sep 20 2023 04:28:44 GMT+0800 (China Standard Time)",
+      "id": 8
+    },
+    {
+      "title": "october",
+      "price": 10,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "personal",
+      "date": "Sun Oct 01 2023 04:28:44 GMT+0800 (China Standard Time)",
+      "id": 9
+    },
+    {
+      "title": "November",
+      "price": 23,
+      "paidWith": "credit",
+      "paymentDetail": "",
+      "category": "food",
+      "date": "Thu Nov 02 2023 04:28:44 GMT+0800 (China Standard Time)",
+      "id": 10
+    },
+    {
+      "title": "December",
+      "price": 25,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "housing",
+      "date": "Mon Dec 04 2023 04:28:44 GMT+0800 (China Standard Time)",
+      "id": 11
+    },
+    {
+      "title": "Netflix ",
+      "price": 0,
+      "paidWith": "cash",
+      "paymentDetail": "",
+      "category": "entertainment",
+      "date": "Tue Oct 17 2023 04:47:49 GMT+0800 (China Standard Time)",
+      "id": 12
+    },
+    {
+      "title": "gas",
+      "price": 50,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "transportation",
+      "date": "Tue Sep 19 2023 05:48:43 GMT+0800 (China Standard Time)",
+      "id": 13
+    },
+    {
+      "title": "Hospital",
+      "price": 100,
+      "paidWith": "cash",
+      "paymentDetail": "",
+      "category": "health",
+      "date": "Wed Sep 20 2023 18:29:05 GMT+0800 (China Standard Time)",
+      "id": 14
+    },
+    {
+      "title": "Books",
+      "price": 29.99,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "personal",
+      "date": "Thu Dec 21 2023 20:11:39 GMT+0800 (China Standard Time)",
+      "id": 15
+    },
+    {
+      "title": "Gas",
+      "price": 50.32,
+      "paidWith": "credit",
+      "paymentDetail": "",
+      "category": "personal",
+      "date": "Sat Dec 30 2023 20:11:39 GMT+0800 (China Standard Time)",
+      "id": 16
+    },
+    {
+      "title": "Insurance",
+      "price": 300,
+      "paidWith": "cash",
+      "paymentDetail": "",
+      "category": "health",
+      "date": "Wed Jan 04 2023 04:04:30 GMT+0800 (China Standard Time)",
+      "id": 17
+    },
+    {
+      "title": "asd",
+      "price": 85,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "personal",
+      "date": "Mon Feb 13 2023 04:07:03 GMT+0800 (China Standard Time)",
+      "id": 18
+    },
+    {
+      "title": "Travel",
+      "price": 830,
+      "paidWith": "credit",
+      "paymentDetail": "",
+      "category": "entertainment",
+      "date": "Wed Mar 15 2023 04:07:03 GMT+0800 (China Standard Time)",
+      "id": 19
+    },
+    {
+      "title": "Grocery",
+      "price": 130,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "food",
+      "date": "Thu Apr 13 2023 04:07:03 GMT+0800 (China Standard Time)",
+      "id": 20
+    },
+    {
+      "title": "Home Depo",
+      "price": 300,
+      "paidWith": "credit",
+      "paymentDetail": "",
+      "category": "personal",
+      "date": "Wed May 10 2023 04:20:21 GMT+0800 (China Standard Time)",
+      "id": 21
+    },
+    {
+      "title": "Travel",
+      "price": 1500,
+      "paidWith": "credit",
+      "paymentDetail": "",
+      "category": "entertainment",
+      "date": "Wed Jun 14 2023 04:20:21 GMT+0800 (China Standard Time)",
+      "id": 22
+    },
+    {
+      "title": "Hospital Bill",
+      "price": 2500,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "health",
+      "date": "Wed Jul 19 2023 04:20:21 GMT+0800 (China Standard Time)",
+      "id": 23
+    },
+    {
+      "title": "Toys",
+      "price": 705,
+      "paidWith": "cash",
+      "paymentDetail": "",
+      "category": "entertainment",
+      "date": "Wed Aug 16 2023 04:20:21 GMT+0800 (China Standard Time)",
+      "id": 24
+    },
+    {
+      "title": "New car",
+      "price": 1300,
+      "paidWith": "credit",
+      "paymentDetail": "",
+      "category": "transportation",
+      "date": "Wed Feb 08 2023 05:16:24 GMT+0800 (China Standard Time)",
+      "id": 25
+    },
+    {
+      "title": "furniture",
+      "price": 1000,
+      "paidWith": "cash",
+      "paymentDetail": "",
+      "category": "housing",
+      "date": "Thu Dec 07 2023 03:24:24 GMT+0800 (China Standard Time)",
+      "id": 26
+    },
+    {
+      "title": "Milk",
+      "price": 20,
+      "paidWith": "cash",
+      "paymentDetail": "",
+      "category": "food",
+      "date": "Fri Sep 29 2023 04:11:20 GMT+0800 (China Standard Time)",
+      "id": 27
+    },
+    {
+      "title": "Games",
+      "price": 100,
+      "paidWith": "cash",
+      "paymentDetail": "001-2201245",
+      "category": "entertainment",
+      "date": "Wed Oct 25 2023 04:31:10 GMT+0800 (China Standard Time)",
+      "id": 28
+    },
+    {
+      "title": "furniture",
+      "price": 300,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "housing",
+      "date": "Sat Sep 23 2023 12:46:49 GMT+0800 (China Standard Time)",
+      "id": 29
+    },
+    {
+      "title": "grocery",
+      "price": 20,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "personal",
+      "date": "Sat Sep 23 2023 13:01:43 GMT+0800 (China Standard Time)",
+      "id": 31
+    },
+    {
+      "title": "Egg",
+      "price": 10,
+      "paidWith": "debit",
+      "paymentDetail": "",
+      "category": "food",
+      "date": "Wed Sep 20 2023 20:31:35 GMT+0800 (China Standard Time)",
+      "id": 33
+    },
+    {
+      "title": "Roof",
+      "price": 300,
+      "paidWith": "credit",
+      "paymentDetail": "",
+      "category": "housing",
+      "date": "Wed Sep 20 2023 20:31:35 GMT+0800 (China Standard Time)",
+      "id": 34
+    },
+    {
+      "title": "Air Pads",
+      "price": 200,
+      "paidWith": "credit",
+      "paymentDetail": "001-21123",
+      "category": "personal",
+      "date": "Sat Sep 23 2023 22:17:45 GMT+0800 (China Standard Time)",
+      "id": 35
+    },
+    {
+      "title": "Feast",
+      "price": 80,
+      "paidWith": "credit",
+      "paymentDetail": "",
+      "category": "food",
+      "date": "Sat Sep 23 2023 22:17:45 GMT+0800 (China Standard Time)",
+      "id": 36
+    }
+  ]
+}
