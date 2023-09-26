@@ -1,3 +1,4 @@
+import path from "path";
 import express from "express";
 import dotenv from "dotenv";
 import userRoutes from "./routes/userRoutes.js";
@@ -25,6 +26,7 @@ app.get("/", (req, res) => {
 app.use("/api/users", userRoutes);
 app.use("/api/expenses", expenseRoutes);
 
+const __dirname = path.resolve();
 if (process.env.NODE_ENV === "production") {
   //set static folder
   app.use(express.static(path.join(__dirname, "/frontend/dist")));
