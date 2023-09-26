@@ -4,15 +4,7 @@ import eslintPlugin from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    eslintPlugin({
-      // setup the plugin
-      cache: false,
-      include: ["./src/**/*.js", "./src/**/*.jsx"],
-      exclude: [],
-    }),
-  ],
+  plugins: [react()],
   server: {
     proxy: {
       "/api": {

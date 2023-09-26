@@ -9,7 +9,7 @@ import FilteredBar from "./chartComponents/FilteredBar";
 const itemsPerPage = 4;
 
 const FilteredCalendar = () => {
-  const { data: expenseList, isLoading, error } = useGetExpenseQuery();
+  const { data: expenseList, error } = useGetExpenseQuery();
   const [selectedDate, setSelectedDate] = useState(null);
 
   const [currentPage, setCurrentPage] = useState(1);
