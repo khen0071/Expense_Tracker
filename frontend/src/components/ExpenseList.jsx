@@ -13,7 +13,7 @@ import Navbar from "./Navbar";
 import FilteredCalendar from "./FilteredCalendar";
 import "react-datepicker/dist/react-datepicker.css";
 
-const itemsPerPage = 4;
+const itemsPerPage = 5;
 
 const ExpenseList = () => {
   const { data: expenseList, isLoading, error } = useGetExpenseQuery();
@@ -64,11 +64,12 @@ const ExpenseList = () => {
             </div>
           </div>
 
+          <div className="mt-6">
+            <AddExpense />
+          </div>
           <div className="flex flex-col-reverse lg:flex-row mt-6 lg:space-x-3">
             <div className="z-0 w-full mt-6 lg:mt-0">
               <div>
-                <AddExpense />
-
                 {isLoading ? (
                   <Spinner />
                 ) : error ? (
@@ -79,7 +80,7 @@ const ExpenseList = () => {
                     </p>
                   </div>
                 ) : (
-                  <div className="overflow-x-auto border-t max-h-[360px]  overflow-y-hidden">
+                  <div className="overflow-x-auto border-t max-h-[660px]  overflow-y-hidden">
                     {expenseList.length < 1 ? (
                       <p className="text-center my-6 italic font-semibold text-[16px] md:text-[16px] mx-2 text-warning">
                         Your expense list will show here. Please add your first
@@ -87,7 +88,7 @@ const ExpenseList = () => {
                       </p>
                     ) : (
                       <>
-                        <div className="min-h-[360px] ">
+                        <div className="">
                           <table className="table table-pin-rows bg-[#28272D] table-pin-cols">
                             <thead className="uppercase">
                               <tr>

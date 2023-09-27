@@ -119,40 +119,42 @@ const FilteredCalendar = () => {
             </span>
           ) : (
             <>
-              <div className="overflow-x-auto border-t max-h-[222px] border-2 border-[#333]  overflow-y-hidden bg-[#28272D]">
-                <table className="table table-pin-rows bg-[#28272D] table-pin-cols">
-                  <thead className="uppercase">
-                    <tr>
-                      <th>Title</th>
-                      <th>Price</th>
-                      <th>Method</th>
-                      <th>Payment Detail</th>
-                      <th>Category</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <AnimatePresence>
-                      {currentExpenses?.map((expense) => (
-                        <motion.tr
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          transition={{ duration: 0.5 }}
-                          exit={{ opacity: 0 }}
-                          key={expense._id}
-                          className="text-[12px] capitalize">
-                          <FilterExpenseTable expense={expense} />
-                        </motion.tr>
-                      ))}
-                    </AnimatePresence>
-                  </tbody>
-                </table>
+              <div className="overflow-x-auto border-t border-2 border-[#333]  overflow-y-hidden bg-[#28272D]">
+                <div className="max-h-[250px]">
+                  <table className="table table-pin-rows bg-[#28272D] table-pin-cols">
+                    <thead className="uppercase">
+                      <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Method</th>
+                        <th>Payment Detail</th>
+                        <th>Category</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <AnimatePresence>
+                        {currentExpenses?.map((expense) => (
+                          <motion.tr
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                            exit={{ opacity: 0 }}
+                            key={expense._id}
+                            className="text-[12px] capitalize">
+                            <FilterExpenseTable expense={expense} />
+                          </motion.tr>
+                        ))}
+                      </AnimatePresence>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </>
           )}
         </div>
 
-        <div className="w-full flex justify-center items-center lg:w-1/2 space-y-3 mt-6 md:mt-0 bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] rounded-md p-4 ">
+        <div className="w-full flex justify-center items-center lg:w-1/2 space-y-3 mt-6 md:mt-0 bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] rounded-md p-4">
           <FilteredBar currentExpenses={currentExpenses} />
         </div>
       </div>
@@ -165,7 +167,7 @@ const FilteredCalendar = () => {
             </p>
 
             {!totalExpense ? (
-              <p className="text-[14px] font-bold">No Data Yet</p>
+              <p className="text-[14px] font-bold">No Payments Yet</p>
             ) : (
               <p className="text-[14px] font-bold">
                 ${totalExpense.toLocaleString()}
@@ -178,7 +180,7 @@ const FilteredCalendar = () => {
           <i className="fa-solid fa-money-bill-wave text-[20px] w-[50px] h-[50px] flex justify-center items-center rounded-full text-white bg-green-500"></i>
           <div className="flex flex-col items-start">
             <p className="text-[12px] font-semibold text-gray-500">
-              Total Cash Expense:
+              Cash Expense:
             </p>
             {!cashTotal ? (
               <p className="text-[14px] font-bold">No Cash Payment</p>
@@ -194,7 +196,7 @@ const FilteredCalendar = () => {
           <i className="fa-regular fa-credit-card text-[20px] w-[50px] h-[50px] flex justify-center items-center rounded-full text-white bg-yellow-500"></i>
           <div className="flex flex-col items-start">
             <p className="text-[12px] font-semibold text-gray-500">
-              Total Debit Expense:
+              Debit Expense:
             </p>
             {!debitTotal ? (
               <p className="text-[14px] font-bold">No Debit Payment</p>
@@ -210,7 +212,7 @@ const FilteredCalendar = () => {
           <i className="fa-brands fa-cc-visa text-[20px] w-[50px] h-[50px] flex justify-center items-center rounded-full text-white bg-orange-500"></i>
           <div className="flex flex-col items-start">
             <p className="text-[12px] font-semibold text-gray-500">
-              Total Credit Expense:
+              Credit Expense:
             </p>
             {!creditTotal ? (
               <p className="text-[14px] font-bold">No Credit Payment</p>
