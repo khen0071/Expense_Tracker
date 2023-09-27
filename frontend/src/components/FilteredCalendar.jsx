@@ -120,7 +120,7 @@ const FilteredCalendar = () => {
           ) : (
             <>
               <div className="overflow-x-auto border-t border-2 border-[#333]  overflow-y-hidden bg-[#28272D]">
-                <div className="max-h-[250px]">
+                <div className="lg:max-h-[220px] max-h-[240px]">
                   <table className="table table-pin-rows bg-[#28272D] table-pin-cols">
                     <thead className="uppercase">
                       <tr>

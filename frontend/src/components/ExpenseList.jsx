@@ -80,7 +80,7 @@ const ExpenseList = () => {
                     </p>
                   </div>
                 ) : (
-                  <div className="overflow-x-auto border-t max-h-[660px]  overflow-y-hidden">
+                  <div className="overflow-x-auto border-t lg:max-h-[440px] max-h-[560px] overflow-y-hidden">
                     {expenseList.length < 1 ? (
                       <p className="text-center my-6 italic font-semibold text-[16px] md:text-[16px] mx-2 text-warning">
                         Your expense list will show here. Please add your first
