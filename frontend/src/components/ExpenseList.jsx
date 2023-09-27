@@ -67,8 +67,8 @@ const ExpenseList = () => {
           <div className="mt-6">
             <AddExpense />
           </div>
-          <div className="flex flex-col-reverse lg:flex-row mt-6 lg:space-x-3">
-            <div className="z-0 w-full mt-6 lg:mt-0">
+          <div className="flex flex-col lg:flex-row mt-6 lg:space-x-3">
+            <div className="z-0 w-full">
               <div>
                 {isLoading ? (
                   <Spinner />
@@ -80,7 +80,7 @@ const ExpenseList = () => {
                     </p>
                   </div>
                 ) : (
-                  <div className="overflow-x-auto border-t lg:max-h-[440px] max-h-[560px] overflow-y-hidden">
+                  <div className="overflow-x-auto lg:max-h-[440px] max-h-[560px] overflow-y-hidden">
                     {expenseList.length < 1 ? (
                       <p className="text-center my-6 italic font-semibold text-[16px] md:text-[16px] mx-2 text-warning">
                         Your expense list will show here. Please add your first
@@ -124,20 +124,20 @@ const ExpenseList = () => {
                 )}
               </div>
               {currentExpenses?.length < 1 || error ? null : (
-                <div className="flex justify-center items-center space-x-3 py-3 border-2 border-[#333] bg-[#28272D]">
+                <div className="flex justify-center items-center space-x-3 py-3 border-2 border-[#333] bg-[#28272D] lg:mb-0 mb-6">
                   <button
                     onClick={() => handlePageChange(currentPage - 1)}
                     disabled={currentPage === 1}
-                    className="btn btn-info w-[100px]">
+                    className="btn btn-info w-[80px] md:w-[100px] text-[10px] md:text-[12px] ">
                     Previous
                   </button>
-                  <span>
+                  <span className="text-[12px]">
                     {currentPage} of {totalPages}
                   </span>
                   <button
                     onClick={() => handlePageChange(currentPage + 1)}
                     disabled={currentPage === totalPages}
-                    className="btn btn-info w-[100px]">
+                    className="btn btn-info w-[80px] md:w-[100px] text-[10px] md:text-[12px]">
                     Next
                   </button>
                 </div>

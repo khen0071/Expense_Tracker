@@ -86,16 +86,16 @@ const FilteredCalendar = () => {
                 <button
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}
-                  className="btn btn-info w-[100px]">
+                  className="btn btn-info w-[80px] md:w-[100px] text-[10px] md:text-[12px]">
                   Previous
                 </button>
-                <span>
+                <span className="text-[12px]">
                   {currentPage} of {totalPages}
                 </span>
                 <button
                   onClick={() => handlePageChange(currentPage + 1)}
                   disabled={currentPage === totalPages || totalPages === 0}
-                  className="btn btn-info w-[100px]">
+                  className="btn btn-info w-[80px] md:w-[100px] text-[10px] md:text-[12px]">
                   Next
                 </button>
               </div>

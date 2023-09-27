@@ -16,65 +16,65 @@ const Stats = ({ expenseList }) => {
 
   return (
     <div className="grid 2xl:grid-cols-4 xl:grid-cols-2 md:grid-cols-2 grid-cols-1 w-full gap-3">
-      <div className="flex justify-center items-center w-full text-center bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] space-x-3 py-6 rounded-md">
+      <div className="flex justify-center items-center w-full text-center bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] space-x-3 py-4 md:py-6 rounded-md">
         <i className="fa-solid fa-sack-dollar text-[20px] w-[50px] h-[50px] flex justify-center items-center rounded-full text-white bg-blue-500"></i>
         <div className="flex flex-col items-start">
-          <p className="text-[12px] font-semibold text-gray-500">
+          <p className="md:text-[12px] text-[10px] font-semibold text-gray-500">
             Total Expense:
           </p>
 
           {!totalExpense ? (
-            <p className="text-[20px] font-bold">No Data Yet</p>
+            <p className="md:text-[20px] text-[14px] font-bold">No Data Yet</p>
           ) : (
-            <p className="text-[20px] font-bold">
+            <p className="md:text-[20px] text-[14px] font-bold">
               ${totalExpense.toLocaleString()}
             </p>
           )}
         </div>
       </div>
 
-      <div className="flex justify-center items-center w-full text-center bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] space-x-3 py-6 rounded-md">
+      <div className="flex justify-center items-center w-full text-center bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] space-x-3 py-4 md:py-6 rounded-md">
         <i className="fa-solid fa-money-bill-wave text-[20px] w-[50px] h-[50px] flex justify-center items-center rounded-full text-white bg-green-500"></i>
         <div className="flex flex-col items-start">
-          <p className="text-[12px] font-semibold text-gray-500">
+          <p className="md:text-[12px] text-[10px] font-semibold text-gray-500">
             Cash Expense:
           </p>
           {!cashTotal ? (
-            <p className="text-[20px] font-bold">No Data Yet</p>
+            <p className="md:text-[20px] text-[14px] font-bold">No Data Yet</p>
           ) : (
-            <p className="text-[20px] font-bold">
+            <p className="md:text-[20px] text-[14px] font-bold">
               ${cashTotal.toLocaleString()}
             </p>
           )}
         </div>
       </div>
 
-      <div className="flex justify-center items-center w-full text-center bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] space-x-3 py-6 rounded-md">
+      <div className="flex justify-center items-center w-full text-center bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] space-x-3 py-4 md:py-6 rounded-md">
         <i className="fa-regular fa-credit-card text-[20px] w-[50px] h-[50px] flex justify-center items-center rounded-full text-white bg-yellow-500"></i>
         <div className="flex flex-col items-start">
-          <p className="text-[12px] font-semibold text-gray-500">
+          <p className="md:text-[12px] text-[10px] font-semibold text-gray-500">
             Debit Expense:
           </p>
           {!debitTotal ? (
-            <p className="text-[20px] font-bold">No Data Yet</p>
+            <p className="md:text-[20px] text-[14px] font-bold">No Data Yet</p>
           ) : (
-            <p className="text-[20px] font-bold">
+            <p className="md:text-[20px] text-[14px] font-bold">
               ${debitTotal.toLocaleString()}
             </p>
           )}
         </div>
       </div>
 
-      <div className="flex justify-center items-center w-full text-center bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] space-x-3 py-6 rounded-md">
+      <div className="flex justify-center items-center w-full text-center bg-[#28272D] shadow-[0_3px_10px_rgb(0,0,0,1)] space-x-3 py-4 md:py-6 rounded-md">
         <i className="fa-brands fa-cc-visa text-[20px] w-[50px] h-[50px] flex justify-center items-center rounded-full text-white bg-orange-500"></i>
         <div className="flex flex-col items-start">
-          <p className="text-[12px] font-semibold text-gray-500">
+          <p className="md:text-[12px] text-[10px] font-semibold text-gray-500">
             Credit Expense:
           </p>
           {!creditTotal ? (
-            <p className="text-[20px] font-bold">No Data Yet</p>
+            <p className="md:text-[20px] text-[14px] font-bold">No Data Yet</p>
           ) : (
-            <p className="text-[20px] font-bold">
+            <p className="md:text-[20px] text-[14px] font-bold">
               ${creditTotal.toLocaleString()}
             </p>
           )}
