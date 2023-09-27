@@ -28,9 +28,9 @@ const Home = () => {
           initial="initial"
           animate="animate"
           className="min-h-screen max-w-[1400px] mx-auto">
-          <div className="flex justify-between items-center py-4 md:px-10 px-4">
+          <div className="flex justify-between items-center py-4 px-2">
             <div>
-              <h1 className="gradientOverlay md:text-[28px] sm:text-[20px] text-[14px]">
+              <h1 className="gradientOverlay md:text-[28px] sm:text-[20px] text-[13px]">
                 Expense Tracker
               </h1>
             </div>
@@ -61,31 +61,28 @@ const Home = () => {
 
           <div className="">
             <div>
-              <div className="text-center lg:mb-4">
+              {/* <div className="text-center lg:mb-4">
                 <div className="flex space-x-3 justify-center items-center">
                   <p className=" md:text-[20px] lg:text-[28px]">Welcome to </p>
                   <p className="text-green-400 text-[24px] md:text-[30px] lg:text-[40px] font-bold">
                     Expense Tracker
                   </p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex flex-col lg:flex-row justify-center items-center p-3 rounded-md lg:text-start text-center mb-6 lg:space-y-0 space-y-6">
-                <section className="w-full">
-                  <div className="lg:max-w-[500px] lg:space-y-4 space-y-1">
-                    <p className="text-[12px] md:text-[16px] lg:text-[30px] text-white">
-                      Where{" "}
-                      <strong className="text-blue-200 text-[14px] md:text-[20px] lg:text-[35px]">
-                        Managing Your Finances
-                      </strong>{" "}
-                      is made simple and insightful
-                    </p>
-                    <p className="text-[12px] md:text-[18px] text-slate-400">
-                      Empower individuals and families to take control of their
-                      finances, make informed decisions, and achieve financial
-                      well-being through graphical data visualization
-                    </p>
-                  </div>
+              <div className="flex flex-col lg:flex-row justify-center items-center p-3 rounded-md lg:text-start text-center mb-6 lg:space-y-0 space-y-6 md:my-10 my-6">
+                <section className="w-full space-y-3 md:space-y-6">
+                  <h1 className="xl:text-[50px] lg:text-[40px] md:text-[30px] text-[22px] font-semibold">
+                    Managing Finance Made{" "}
+                    <strong className="text-green-500">Simple</strong> &{" "}
+                    <strong className="text-green-500">Insightful!</strong>
+                  </h1>
+
+                  <p className="text-[12px] md:text-[16px] text-slate-400">
+                    Empower individuals and families to take control of their
+                    finances, make informed decisions, and achieve financial
+                    well-being through graphical data visualization
+                  </p>
                 </section>
 
                 <section className="w-full md:p-10">

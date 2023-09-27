@@ -66,7 +66,7 @@ const Register = () => {
         variants={formVariant}
         initial="initial"
         animate="animate"
-        className="registerContainer min-h-screen flex justify-center items-center">
+        className="registerContainer min-h-screen flex justify-center items-center px-3">
         <div className="border-2 border-white p-10 bg-blue-300/20">
           <h1 className="text-center text-[24px] text-slate-300 font-bold uppercase">
             Welcome
